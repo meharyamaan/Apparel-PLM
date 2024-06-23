@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* App.css */
+body, html {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.app-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange children in a column */
+  min-height: 100vh; /* Take up the full height of the viewport */
+  width: 100%; /* Take up the full width of the viewport */
+  object-fit:cover;
+}
+
+.content-container {
+  display: flex;
+  flex: 1; /* Take up remaining space */
+}
+
+.main-content {
+  flex: 5;
+  overflow-y: auto;
+
+}
+.sidebar-and-content-container {
+  display: flex;
+  flex: 1;
+  
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.Sidebar {
+ /*position: fixed; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 10%; /* Adjust as needed */
+  background-color: #130101; /* Example background color */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.center {
+  padding-top: 20px; /* Example padding for content */
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
